@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icons8-moosebear-48.png" type="image/x-icon">
+    <title>RockPapersScissors</title>
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--normalized css-->
+    <link rel="stylesheet" href="./normalize.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+
+    <div class="card">
+        <div class="info-container">
+            <div class="title-container">
+                <span>rock</span>
+                <span>paper</span>
+                <span>scissors</span>
+            </div>
+
+        <div class="score-container">
+            <p>User Score:<span class="user-score">0</span></p>
+            <p>Cmp Score:<span class="cmp-score">0</span></p>
+        </div>
+        </div>
+
+
+        <div class ="weapons-container">
+            <button class="btn weapon" onclick="getUserChoice('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button class="btn weapon" onclick="getUserChoice('paper')"><i class="fa-solid fa-hand"></i></button>
+            <button class="btn weapon" onclick="getUserChoice('scissors')"><i class="fa-solid fa-hand-scissors"></i></button>
+        </div>
+
+
+
+        <div class="result-container">
+            <p class="user-choice"></p>
+            <p class="cmp-choice"></p>
+            <p class="result"></p>
+        </div>
+        <div class="btn">
+            <button class="reset">reset</button>
+        </div>
+
+
+
+
+    </div>
+    <!--custom script-->
+    <script src="./script.js"></script>   
+</body>
+</html>
