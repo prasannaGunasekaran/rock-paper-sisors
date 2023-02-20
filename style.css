@@ -154,9 +154,9 @@ color: gold;
 }
 
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 426px) {
     .card{
-        width: 20rem;
+        width: 19rem;
     }
   }
   
